@@ -1,0 +1,108 @@
+/*Bio*/
+
+
+.bio {
+    column-gap: 7.4rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.bio__heading {
+    font-size: var(--font-size-70);
+    font-weight: var(--font-weight-bold);
+}
+
+.bio__objective {
+    font-family: var(--font-family-poppins);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-20);
+    margin: 3rem 0 8rem;
+}
+
+.bio__University {
+    color: var(--color-green);
+}
+
+.bio__Facebook {
+    color: var(--color-blue);
+}
+
+.bio__LinkedIn {
+    color: var(--color-dark-blue)
+}
+
+.bio__Github {
+    color: orangered;
+}
+
+.bio__links {
+    font-size: 2.4rem;
+    font-weight: var(--font-weight-semi-bold);
+    text-decoration: none;
+}
+
+.say-hi-link {
+    background-color: var(--color-link-bg);
+    color: var(--color-white);
+    padding: 0.7rem 4.7rem;
+
+}
+
+.bio .find-out-link {
+    padding: 0.7rem 0;
+    -webkit-margin-start: 1.4rem;
+    margin-inline-start: 1.4rem;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0.5rem);
+    }
+
+    35% {
+        transform: translateY(-0.5rem);
+    }
+
+    70% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.bio__arrow {
+    display: inline-block;
+    animation: jump infinite 1s ease-in-out alternate;
+}
+
+.bio__pic__content {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    justify-self: end;
+}
+
+.bio__pic {
+    border-radius: 1.8rem;
+
+    width: 42.5rem;
+}
+
+.CV {
+    margin-left: 1em;
+}
+
+.bio__pic__content::before {
+    content: "";
+    position: absolute;
+    background-color: var(--color-box-img);
+    width: 100%;
+    height: 32rem;
+    z-index: -1;
+    border-radius: 1.8rem;
+    box-shadow: 2.17543px 8.7017px 38.0699px rgba(0, 0, 0, 0.15);
+}
+
+
+/* end bio*/
